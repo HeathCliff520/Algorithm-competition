@@ -36,3 +36,25 @@ void character01::Dynamicachieve() {
     printf("%d",now->data);
     delete now;
 }
+
+void character01::Arrayachieve() {
+    int n,m;
+    scanf("%d %d",&n,&m);
+    nodearrs[0].nextid=1;
+    for (int i = 1; i <=n ; i++) {
+        nodearrs[i].id=i;
+        nodearrs[i].nextid=i+1;
+    }
+    nodearrs[n].nextid=1;
+    int now=1,prev=1;
+    while ((n--)>1){
+        for (int i = 1; i <m; i++) {
+            prev=now;
+            now=nodearrs[now].nextid;
+        }
+        printf("%d ",nodearrs[now].id);
+        nodearrs[prev].nextid=nodearrs[now].nextid;
+        now=nodearrs[prev].nextid;
+    }
+    printf("%d",nodearrs[now].nextid);
+}

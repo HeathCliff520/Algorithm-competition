@@ -11,6 +11,16 @@ private:
 public:
     void Dynamicachieve();
 
+//1.1.2静态链表实现约瑟夫问题
+private:
+    static const int maxlen=105;
+    struct nodearr{
+        int id,nextid;
+        int data;
+    }nodearrs[maxlen];
+public:
+    void Arrayachieve();
+
 };
 
 
