@@ -1,3 +1,6 @@
-//
-// Created by 78436 on 2023/11/19.
-//
+#include "character01.h"
+
+int main(){
+    character01 dy;
+    dy.Dynamicachieve();
+}
