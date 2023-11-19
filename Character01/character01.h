@@ -21,6 +21,10 @@ private:
 public:
     void Arrayachieve();
 //1.1.3
+private:
+
+public:
+
 };
 
 
